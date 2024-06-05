@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppDisplayName" xml:space="preserve">
+    <value>URE Monitoring</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>RMMS Radiation Monitoring and Mapping Software</value>
+  </data>
+  <data name="Shell_Main.Content" xml:space="preserve">
+    <value>Моніторинг</value>
+  </data>
+  <data name="Shell_ContentGrid.Content" xml:space="preserve">
+    <value>ContentGrid</value>
+  </data>
+  <data name="AppNotificationSamplePayload" xml:space="preserve">
+    <value>&lt;toast launch="action=ToastClick"&gt;
+  &lt;visual&gt;
+    &lt;binding template="ToastGeneric"&gt;
+      &lt;text&gt;App Notification&lt;/text&gt;
+      &lt;text&gt;&lt;/text&gt;
+      &lt;image placement="appLogoOverride" hint-crop="circle" src="{0}Assets/WindowIcon.ico"/&gt;
+    &lt;/binding&gt;
+  &lt;/visual&gt;
+  &lt;actions&gt;
+    &lt;action content="Settings" arguments="action=Settings"/&gt;
+  &lt;/actions&gt;
+&lt;/toast&gt;</value>
+  </data>
+  <data name="Shell_EquipmentSettings.Content" xml:space="preserve">
+    <value>Налаштування</value>
+  </data>
+  <data name="AdjustConnectSettings" xml:space="preserve">
+    <value>Будь ласка, перевірте наявність всіх необхдіних налаштувань для {0}</value>
+  </data>
+  <data name="ItemUnavailable" xml:space="preserve">
+    <value>{0} недоступний. Будь ласка, перевіте налаштування.</value>
+  </data>
+  <data name="ReviewConnectSettings" xml:space="preserve">
+    <value>Будь ласка, перевірте корректність налаштувань для {0}. Якщо обладнання не під'єднано, під'єднайте його.</value>
+  </data>
+  <data name="Detector_s" xml:space="preserve">
+    <value>Детекторів</value>
+  </data>
+  <data name="Gps" xml:space="preserve">
+    <value>GPS-модуля</value>
+  </data>
+  <data name="Connected" xml:space="preserve">
+    <value>Під'єднано</value>
+  </data>
+  <data name="EquipmentDisconnected" xml:space="preserve">
+    <value>{0} від'єднано. Будь ласка, під'єднайте пристрій.</value>
+  </data>
+  <data name="GPS-own" xml:space="preserve">
+    <value>GPS-модуль</value>
+  </data>
+  <data name="EquipmentConnected" xml:space="preserve">
+    <value>{0} під'єднано.</value>
+  </data>
+  <data name="Detectors" xml:space="preserve">
+    <value>Детектори</value>
+  </data>
+  <data name="Shell_History.Content" xml:space="preserve">
+    <value>Історія</value>
+  </data>
+  <data name="ExportEnded" xml:space="preserve">
+    <value>Експорт завершено</value>
+  </data>
+  <data name="ExportFailed" xml:space="preserve">
+    <value>Виникла помилка під час експорту</value>
+  </data>
+  <data name="ExportStarted" xml:space="preserve">
+    <value>Експорт розпочато</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Відміна</value>
+  </data>
+  <data name="Column" xml:space="preserve">
+    <value>Колонка</value>
+  </data>
+  <data name="FileEmpty" xml:space="preserve">
+    <value>Файл {0} пустий.</value>
+  </data>
+  <data name="FileImportEnded" xml:space="preserve">
+    <value>Імпорт {0} 
+завершено.</value>
+  </data>
+  <data name="FileImportStarted" xml:space="preserve">
+    <value>Імпорт {0}
+розпочато.</value>
+  </data>
+  <data name="ImportError" xml:space="preserve">
+    <value>Виникла помилка імпорту.</value>
+  </data>
+  <data name="ImportProtocol" xml:space="preserve">
+    <value>Протокол імпорту</value>
+  </data>
+  <data name="ImportStarted" xml:space="preserve">
+    <value>Імпорт розпочато</value>
+  </data>
+  <data name="IncorrectDataType" xml:space="preserve">
+    <value>Некоректний тип даних</value>
+  </data>
+  <data name="IncorrectFileFormat" xml:space="preserve">
+    <value>Некоректний формат файлу.</value>
+  </data>
+  <data name="InvalidFileName" xml:space="preserve">
+    <value>Некоректне ім'я файлу {0}.</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>Строка</value>
+  </data>
+  <data name="Shell_UserSettings.Content" xml:space="preserve">
+    <value>Користувачі</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Адмін</value>
+  </data>
+  <data name="Operator" xml:space="preserve">
+    <value>Оператор</value>
+  </data>
+  <data name="SuperAdmin" xml:space="preserve">
+    <value>Суперадмін</value>
+  </data>
+  <data name="NoPower" xml:space="preserve">
+    <value>Відсутнє живлення {0}.</value>
+  </data>
+  <data name="PowerLoss" xml:space="preserve">
+    <value>Зафіксовано втрату живлення {0}. Відновлення з'єднання.</value>
+  </data>
+  <data name="Shell_AboutProgram.Content" xml:space="preserve">
+    <value>Про програму</value>
+  </data>
+  <data name="RouteEmpty" xml:space="preserve">
+    <value>Маршрут файлу {0} пустий. </value>
+  </data>
+  <data name="TooltipTextDetectorGraphOff" xml:space="preserve">
+    <value>Вимкнути відображення графіка</value>
+  </data>
+  <data name="TooltipTextDetectorGraphOn" xml:space="preserve">
+    <value>Увімкнути відображення графіка</value>
+  </data>
+  <data name="LoginBtn.Content" xml:space="preserve">
+    <value>Увійти</value>
+  </data>
+  <data name="TooltipTextLogoutBtn.Text" xml:space="preserve">
+    <value>Вихід</value>
+  </data>
+  <data name="Authorize.Text" xml:space="preserve">
+    <value>Авторизація</value>
+  </data>
+  <data name="AuthorizeForm_LoginBox.Header" xml:space="preserve">
+    <value>Логін</value>
+  </data>
+  <data name="AuthorizeForm_LoginBox.PlaceholderText" xml:space="preserve">
+    <value>логін</value>
+  </data>
+  <data name="AuthorizeForm_PasswordBox.Header" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="AuthorizeForm_PasswordBox.PlaceholderText" xml:space="preserve">
+    <value>пароль</value>
+  </data>
+  <data name="BackBtnText.Content" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="DatePickerDefault.Header" xml:space="preserve">
+    <value>Оберіть дату</value>
+  </data>
+  <data name="DoseRateBoxDefault.Header" xml:space="preserve">
+    <value>Вкажіть рівень радіації (мкЗв/год)</value>
+  </data>
+  <data name="Height.Text" xml:space="preserve">
+    <value>висота</value>
+  </data>
+  <data name="Humidity.Text" xml:space="preserve">
+    <value>вологість</value>
+  </data>
+  <data name="LogoutBtnText.Content" xml:space="preserve">
+    <value>Вийти</value>
+  </data>
+  <data name="LogoutConfirmText.Text" xml:space="preserve">
+    <value>Ви дійсно бажаєте вийти?</value>
+  </data>
+  <data name="MaxLevel.Text" xml:space="preserve">
+    <value>максимальний рівень</value>
+  </data>
+  <data name="Pressure.Text" xml:space="preserve">
+    <value>тиск</value>
+  </data>
+  <data name="SaveBtnText.Content" xml:space="preserve">
+    <value>Зберегти</value>
+  </data>
+  <data name="SelectBtnText.Content" xml:space="preserve">
+    <value>Обрати</value>
+  </data>
+  <data name="SpeedMove.Text" xml:space="preserve">
+    <value>швидкість руху</value>
+  </data>
+  <data name="StartBtnText" xml:space="preserve">
+    <value>Старт</value>
+  </data>
+  <data name="StartBtnTextDefault.Text" xml:space="preserve">
+    <value>Старт</value>
+  </data>
+  <data name="StopBtnText" xml:space="preserve">
+    <value>Стоп</value>
+  </data>
+  <data name="Temperature.Text" xml:space="preserve">
+    <value>температура</value>
+  </data>
+  <data name="TimePickerDefault.Header" xml:space="preserve">
+    <value>Оберіть час</value>
+  </data>
+  <data name="TooltipText_DetectorsState.Text" xml:space="preserve">
+    <value>Стан детекторів</value>
+  </data>
+  <data name="TooltipText_History.Text" xml:space="preserve">
+    <value>Історія</value>
+  </data>
+  <data name="TooltipText_LightAlarm.Text" xml:space="preserve">
+    <value>Світлова сигналізація</value>
+  </data>
+  <data name="TooltipText_ManualInput.Text" xml:space="preserve">
+    <value>Ручне введення</value>
+  </data>
+  <data name="TooltipText_MeteostationState.Text" xml:space="preserve">
+    <value>Стан метеостанції</value>
+  </data>
+  <data name="TooltipText_Monitoring.Text" xml:space="preserve">
+    <value>Моніторинг</value>
+  </data>
+  <data name="TooltipText_Notify.Text" xml:space="preserve">
+    <value>Оповіщення</value>
+  </data>
+  <data name="TooltipText_SoundAlarm.Text" xml:space="preserve">
+    <value>Звукова сигналізація</value>
+  </data>
+  <data name="WindDirectionAndSpeed.Text" xml:space="preserve">
+    <value>напрямок та швидкість вітру</value>
+  </data>
+  <data name="NotActiveTextBlock.Text" xml:space="preserve">
+    <value>не активний</value>
+  </data>
+  <data name="AboutProgramTextBlock.Text" xml:space="preserve">
+    <value>Про програму</value>
+  </data>
+  <data name="AboutVersionTextBlock.Text" xml:space="preserve">
+    <value>Відомості про версію</value>
+  </data>
+  <data name="AllRightsProtectedTextBlock.Text" xml:space="preserve">
+    <value>© 2024 URE. Всі права захищені</value>
+  </data>
+  <data name="BaudRateCombobox.Header" xml:space="preserve">
+    <value>Швидкість передачі данних</value>
+  </data>
+  <data name="BlackoutPeriodBox.Header" xml:space="preserve">
+    <value>Період вимкнення (сек)</value>
+  </data>
+  <data name="CriticalDoseRateBox.Header" xml:space="preserve">
+    <value>Критично</value>
+  </data>
+  <data name="DetectorNameBox.PlaceholderText" xml:space="preserve">
+    <value>ім'я детектора</value>
+  </data>
+  <data name="DetectorsTabViewItem.Header" xml:space="preserve">
+    <value>Детектори</value>
+  </data>
+  <data name="DeviceIdentifierTextBlock.Text" xml:space="preserve">
+    <value>Ідентифікатор пристрою</value>
+  </data>
+  <data name="HeightTextBlock.Text" xml:space="preserve">
+    <value>Висота</value>
+  </data>
+  <data name="HighDoseRateBox.Header" xml:space="preserve">
+    <value>Підвищення</value>
+  </data>
+  <data name="MaxMoveSpeedBox.Header" xml:space="preserve">
+    <value>Максимальна швидкість руху (км/год)</value>
+  </data>
+  <data name="MeteostationTabViewItem.Header" xml:space="preserve">
+    <value>Метеостанція</value>
+  </data>
+  <data name="MeteoStationTextBlock.Text" xml:space="preserve">
+    <value>Метеостанція</value>
+  </data>
+  <data name="MinMoveSpeedBox.Header" xml:space="preserve">
+    <value>Мінімальна швидкість руху (км/год)</value>
+  </data>
+  <data name="MoveSpeedTextBlock.Text" xml:space="preserve">
+    <value>Швидкість руху</value>
+  </data>
+  <data name="NormDoseRateBox.Header" xml:space="preserve">
+    <value>Норма</value>
+  </data>
+  <data name="ProgramVersionTextBlock.Text" xml:space="preserve">
+    <value>Версія програми:</value>
+  </data>
+  <data name="RepetitionIntervalBox.Header" xml:space="preserve">
+    <value>Інтервал повторення (сек)</value>
+  </data>
+  <data name="SaveChangesTextBlock.Text" xml:space="preserve">
+    <value>Зберегти зміни</value>
+  </data>
+  <data name="SerialNumberTextBlock.Text" xml:space="preserve">
+    <value>Серійний номер</value>
+  </data>
+  <data name="SerialPortCombobox.Header" xml:space="preserve">
+    <value>Порт</value>
+  </data>
+  <data name="SoundAldrmTextBlock.Text" xml:space="preserve">
+    <value>Звукова сигналізація</value>
+  </data>
+  <data name="SupportTextBlock.Text" xml:space="preserve">
+    <value>Служба підтримки</value>
+  </data>
+  <data name="Meteo" xml:space="preserve">
+    <value>Метеостанції</value>
+  </data>
+  <data name="Meteo-own" xml:space="preserve">
+    <value>Метеостанція</value>
+  </data>
+  <data name="TextBlock_Humidity.Text" xml:space="preserve">
+    <value>Вологість</value>
+  </data>
+  <data name="TextBlock_Temperature.Text" xml:space="preserve">
+    <value>Температура</value>
+  </data>
+  <data name="TextBlock_WindSpeed.Text" xml:space="preserve">
+    <value>Швидкість вітру</value>
+  </data>
+  <data name="TextBlock_Preassure.Text" xml:space="preserve">
+    <value>Тиск</value>
+  </data>
+  <data name="TextBlock_WindDirection.Text" xml:space="preserve">
+    <value>Напрямок вітру</value>
+  </data>
+  <data name="EquipmentIdentifierBox.Header" xml:space="preserve">
+    <value>Ідентифікатор пристрою</value>
+  </data>
+  <data name="SerialNumberBox.Header" xml:space="preserve">
+    <value>Серійний номер</value>
+  </data>
+  <data name="ApproveProgramClosing" xml:space="preserve">
+    <value>Закрити програму</value>
+  </data>
+  <data name="CancelProgramClosing" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="CloseProgramConfirmText" xml:space="preserve">
+    <value>Ви дійсно хочете закрити програму? </value>
+  </data>
+</root>

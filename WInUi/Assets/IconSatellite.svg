@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon_satellite" clip-path="url(#clip0_85330_22224)">
+<path id="Vector" d="M8.33274 15.6687L11.9996 12.0019M18.1109 13.2242C18.1109 11.2792 17.3383 9.41385 15.9629 8.03852C14.5876 6.6632 12.7223 5.89055 10.7773 5.89055M23 13.2242C23 9.98252 21.7123 6.87362 19.42 4.58142C17.1278 2.28921 14.0189 1.00146 10.7773 1.00146M2.22138 9.55737C1.22455 11.2625 0.820822 13.2499 1.07332 15.2089C1.32582 17.1678 2.22032 18.9879 3.61696 20.3845C5.0136 21.7811 6.83366 22.6756 8.7926 22.9281C10.7515 23.1806 12.7389 22.7769 14.4441 21.7801L2.22138 9.55737Z" stroke="black" stroke-opacity="0.8956" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_85330_22224">
+<rect width="24" height="24" fill="white" transform="translate(0 0.00146484)"/>
+</clipPath>
+</defs>
+</svg>

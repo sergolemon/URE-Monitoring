@@ -1,0 +1,100 @@
+﻿<Page
+    x:Class="URE.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    mc:Ignorable="d"
+    xmlns:lvc="using:LiveChartsCore.SkiaSharpView.WinUI"
+    xmlns:vms="using:URE.ViewModels"
+    xmlns:uc="using:URE.Views.Controls">
+    <Grid x:Name="ContentArea">
+        <Grid Background="White" Margin="3">
+            <TabView IsAddTabButtonVisible="False" TabWidthMode="Equal">
+                <TabViewItem IsClosable="False" Header="Гістограма">
+                    <TabViewItem.Content>
+                        <Grid Background="White">
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <uc:HistogramControl Height="300" DataContext="{Binding Histogram}"/>
+
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+
+                                <uc:DetectorControl DataContext="{Binding Detector1}" />
+                                <uc:DetectorControl DataContext="{Binding Detector4}" Grid.Row="1" />
+                                <uc:DetectorControl DataContext="{Binding Detector2}" Grid.Column="1" />
+                                <uc:DetectorControl DataContext="{Binding Detector5}" Grid.Row="1" Grid.Column="1" />
+                                <uc:DetectorControl DataContext="{Binding Detector3}" Grid.Column="2" />
+                                <uc:DetectorControl DataContext="{Binding Detector6}" Grid.Column="2" Grid.Row="1" />
+                            </Grid>
+                        </Grid>
+                    </TabViewItem.Content>
+                </TabViewItem>
+                <TabViewItem IsClosable="False" Header="Автоматичне введення">
+                    <TabViewItem.Content>
+                        <Grid>
+                            <controls:DataGrid IsReadOnly="True" AutoGenerateColumns="False" ItemsSource="{Binding AutoMeteoData}" SelectionChanged="ViewModel.OnGridSelectionChanged">
+                                <controls:DataGrid.CellStyle>
+                                    <Style TargetType="controls:DataGridCell">
+                                    </Style>
+                                </controls:DataGrid.CellStyle>
+                                <controls:DataGrid.RowStyle>
+                                    <Style TargetType="controls:DataGridRow">
+                                        <Setter Property="Margin" Value="0 5 0 5" />
+                                    </Style>
+                                </controls:DataGrid.RowStyle>
+                                <controls:DataGrid.Columns>
+                                    <controls:DataGridTextColumn Header="Дата" Binding="{Binding DateStr}"/>
+                                    <controls:DataGridTextColumn Header="Час" Binding="{Binding TimeStr}"/>
+                                    <controls:DataGridTextColumn Header="Координати" Binding="{Binding CoordinatesStr}"/>
+                                    <controls:DataGridTextColumn Header="Детектор 1" Binding="{Binding D1RadiationStr}"/>
+                                    <controls:DataGridTextColumn Header="Детектор 2" Binding="{Binding D2RadiationStr}"/>
+                                    <controls:DataGridTextColumn Header="Детектор 3" Binding="{Binding D3RadiationStr}"/>
+                                    <controls:DataGridTextColumn Header="Детектор 4" Binding="{Binding D4RadiationStr}"/>
+                                    <controls:DataGridTextColumn Header="Детектор 5" Binding="{Binding D5RadiationStr}"/>
+                                    <controls:DataGridTextColumn Header="Детектор 6" Binding="{Binding D6RadiationStr}"/>
+                                </controls:DataGrid.Columns>
+                            </controls:DataGrid>
+                        </Grid>
+                    </TabViewItem.Content>
+                </TabViewItem>
+                <TabViewItem IsClosable="False" Header="Ручне введення">
+                    <TabViewItem.Content>
+                        <Grid>
+                            <controls:DataGrid IsReadOnly="True" AutoGenerateColumns="False" ItemsSource="{Binding ManualMeteoData}" SelectionChanged="ViewModel.OnGridSelectionChanged">
+                                <controls:DataGrid.CellStyle>
+                                    <Style TargetType="controls:DataGridCell">
+                                    </Style>
+                                </controls:DataGrid.CellStyle>
+                                <controls:DataGrid.RowStyle>
+                                    <Style TargetType="controls:DataGridRow">
+                                        <Setter Property="Margin" Value="0 5 0 5" />
+                                    </Style>
+                                </controls:DataGrid.RowStyle>
+                                <controls:DataGrid.Columns>
+                                    <controls:DataGridTextColumn Header="Дата" Binding="{Binding DateStr}"/>
+                                    <controls:DataGridTextColumn Header="Час" Binding="{Binding TimeStr}"/>
+                                    <controls:DataGridTextColumn Header="Координати" Binding="{Binding CoordinatesStr}"/>
+                                    <controls:DataGridTextColumn Header="Доза радіації" Binding="{Binding ManualInputRadiationStr}"/>
+                                </controls:DataGrid.Columns>
+                            </controls:DataGrid>
+                        </Grid>
+                    </TabViewItem.Content>
+                </TabViewItem>
+            </TabView>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="URE.Views.HistoryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:URE.Views"
+    xmlns:uc="using:URE.Views.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <DataTemplate x:Key="historyItemTemplate">
+            <StackPanel Margin="5" Orientation="Vertical">
+                <TextBlock Foreground="#404040" FontSize="15" FontWeight="Medium" Text="{Binding StreamPeriodStr}"/>
+                <TextBlock Grid.Column="1" Foreground="#404040" FontSize="15" FontWeight="Normal" Text="{Binding PersonInfo}"/>
+                <uc:HistogramControl Height="300" DataContext="{Binding Histogram}" />
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+    
+    <Grid Background="White" Margin="3">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="3" Orientation="Horizontal">
+                <Button x:Name="ExportButton" Margin="0 0 10 0" Content="Експорт" Click="Button_Click_1"/>
+                <Button x:Name="ImportButton" Margin="0 0 10 0" Content="Імпорт" Click="Button_Click"/>
+            </StackPanel>
+            <Border Grid.Row="1" Name="contentBorder">
+                <Grid>
+                    <TextBlock x:Name="EmptyBlock" Text="Відсутні дані для відображення" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+                </Grid>
+            </Border>
+           
+            <PipsPager SelectedIndexChanged="PipsPager_SelectedIndexChanged" NumberOfPages="{x:Bind ViewModel.TotalPagesCount, Mode=OneWay}" Grid.Row="2" HorizontalAlignment="Center" NextButtonVisibility="Visible" PreviousButtonVisibility="Visible" />
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,244 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetName>URE</TargetName>
+		<TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
+		<TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+		<RootNamespace>URE</RootNamespace>
+		<ApplicationIcon>Assets\Logo.ico</ApplicationIcon>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<Platforms>x86;x64;arm64</Platforms>
+		<RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
+		<PublishProfile>Properties\PublishProfiles\win10-$(Platform).pubxml</PublishProfile>
+		<!--<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>-->
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseWinUI>true</UseWinUI>
+		<EnableMsixTooling>true</EnableMsixTooling>
+		<GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+		<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+		<PackageCertificateThumbprint>82CE2925BB98D10F8704B0DDD11141D5266D0983</PackageCertificateThumbprint>
+		<AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+		<AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+		<AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+		<GenerateTestArtifacts>True</GenerateTestArtifacts>
+		<AppxBundle>Never</AppxBundle>
+		<AppxPackageDir>D:\VSProjects\URE_Publish\</AppxPackageDir>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+		<DefineConstants>DISABLE_XAML_GENERATED_MAIN</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+		<DefineConstants>DISABLE_XAML_GENERATED_MAIN</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<DefineConstants>DISABLE_XAML_GENERATED_MAIN</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<DefineConstants>DISABLE_XAML_GENERATED_MAIN</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">
+		<DefineConstants>DISABLE_XAML_GENERATED_MAIN</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm64'">
+		<DefineConstants>DISABLE_XAML_GENERATED_MAIN</DefineConstants>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<Content Remove="Assets\BadgeLogo.scale-100.png" />
+		<Content Remove="Assets\BadgeLogo.scale-125.png" />
+		<Content Remove="Assets\BadgeLogo.scale-150.png" />
+		<Content Remove="Assets\BadgeLogo.scale-200.png" />
+		<Content Remove="Assets\BadgeLogo.scale-400.png" />
+		<Content Remove="Assets\SplashScreen.scale-100.png" />
+		<Content Remove="Assets\SplashScreen.scale-125.png" />
+		<Content Remove="Assets\SplashScreen.scale-150.png" />
+		<Content Remove="Assets\SplashScreen.scale-400.png" />
+		<Content Remove="Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png" />
+		<Content Remove="Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png" />
+		<Content Remove="Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png" />
+		<Content Remove="Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png" />
+		<Content Remove="Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png" />
+		<Content Remove="Assets\Square44x44Logo.altform-unplated_targetsize-16.png" />
+		<Content Remove="Assets\Square44x44Logo.altform-unplated_targetsize-256.png" />
+		<Content Remove="Assets\Square44x44Logo.altform-unplated_targetsize-32.png" />
+		<Content Remove="Assets\Square44x44Logo.altform-unplated_targetsize-48.png" />
+		<Content Remove="Assets\Square44x44Logo.scale-100.png" />
+		<Content Remove="Assets\Square44x44Logo.scale-125.png" />
+		<Content Remove="Assets\Square44x44Logo.scale-150.png" />
+		<Content Remove="Assets\Square44x44Logo.scale-400.png" />
+		<Content Remove="Assets\Square44x44Logo.targetsize-16.png" />
+		<Content Remove="Assets\Square44x44Logo.targetsize-24.png" />
+		<Content Remove="Assets\Square44x44Logo.targetsize-256.png" />
+		<Content Remove="Assets\Square44x44Logo.targetsize-32.png" />
+		<Content Remove="Assets\Square44x44Logo.targetsize-48.png" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="Assets\AntennaIcon.png" />
+		<None Remove="Assets\Arrow.png" />
+		<None Remove="Assets\ArrowBackground.png" />
+		<None Remove="Assets\Calendar.png" />
+		<None Remove="Assets\Danger.svg" />
+		<None Remove="Assets\DeviceOnline.png" />
+		<None Remove="Assets\Dozimetr.svg" />
+		<None Remove="Assets\Hand.png" />
+		<None Remove="Assets\HandIcon.png" />
+		<None Remove="Assets\IconAlert.svg" />
+		<None Remove="Assets\IconAntenna.svg" />
+		<None Remove="Assets\IconCalendar.svg" />
+		<None Remove="Assets\IconCompas.png" />
+		<None Remove="Assets\IconCompas.svg" />
+		<None Remove="Assets\IconHandLeft.svg" />
+		<None Remove="Assets\IconHumidity.png" />
+		<None Remove="Assets\IconHumidity.svg" />
+		<None Remove="Assets\IconPlay.svg" />
+		<None Remove="Assets\IconRadiation.png" />
+		<None Remove="Assets\IconRadiation.svg" />
+		<None Remove="Assets\IconSatellite.svg" />
+		<None Remove="Assets\IconSpeaker.svg" />
+		<None Remove="Assets\IconSpeed.png" />
+		<None Remove="Assets\IconSpeed.svg" />
+		<None Remove="Assets\IconSun.svg" />
+		<None Remove="Assets\IconTemperature.png" />
+		<None Remove="Assets\IconTemperature.svg" />
+		<None Remove="Assets\IconWaves.png" />
+		<None Remove="Assets\IconWaves.svg" />
+		<None Remove="Assets\IconWind.svg" />
+		<None Remove="Assets\Logo.png" />
+		<None Remove="Assets\Logo1.png" />
+		<None Remove="Assets\minus-default.svg" />
+		<None Remove="Assets\minus-disabled.svg" />
+		<None Remove="Assets\NotificationIcon.png" />
+		<None Remove="Assets\plus-default.svg" />
+		<None Remove="Assets\plus-disabled.svg" />
+		<None Remove="Assets\PushSimplePush.png" />
+		<None Remove="Assets\RadiationCritical.png" />
+		<None Remove="Assets\RadiationHigh.png" />
+		<None Remove="Assets\RadiationNormal.png" />
+		<None Remove="Assets\SatelliteIcon.png" />
+		<None Remove="Assets\SatelliteOnline.png" />
+		<None Remove="Assets\SoundCoution.png" />
+		<None Remove="Assets\SunCoution.png" />
+		<None Remove="Assets\TrackerStart.png" />
+		<None Remove="Assets\WhiteHandIcon.png" />
+		<None Remove="Sound\disconnected.wav" />
+		<None Remove="Sound\high.wav" />
+		<None Remove="Sound\medium.wav" />
+		<None Remove="Styles\ValidatingStyles.xaml" />
+		<None Remove="Views\AboutProgramPage.xaml" />
+		<None Remove="Views\Controls\DetectorConfigControl.xaml" />
+		<None Remove="Views\Controls\DetectorControl.xaml" />
+		<None Remove="Views\Controls\MapControl.xaml" />
+		<None Remove="Views\Controls\UserConfigControl.xaml" />
+		<None Remove="Views\Controls\WindDirectionControl.xaml" />
+		<None Remove="Views\EquipmentSettingsPage.xaml" />
+		<None Remove="Views\HistoryPage.xaml" />
+		<None Remove="Views\UserSettingsPage.xaml" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="Sound\high.wav" />
+		<Content Include="Sound\disconnected.wav" />
+		<Content Include="Sound\medium.wav" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Manifest Include="$(ApplicationManifest)" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+		<ProjectCapability Include="Msix" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BruTile.MbTiles" Version="5.0.6" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+		<PackageReference Include="CommunityToolkit.WinUI.Animations" Version="8.0.230907" />
+		<PackageReference Include="CommunityToolkit.WinUI.UI.Controls" Version="7.1.2" />
+		<PackageReference Include="CommunityToolkit.WinUI.UI.Media" Version="7.1.2" />
+		<PackageReference Include="LiveChartsCore.SkiaSharpView.WinUI" Version="2.0.0-rc2.1" />
+		<PackageReference Include="Mapsui" Version="4.1.1" />
+		<PackageReference Include="Mapsui.WinUI" Version="4.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.14" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.14">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.14">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231115000" />
+		<PackageReference Include="Microsoft.Xaml.Behaviors.WinUI.Managed" Version="2.0.9" />
+		<PackageReference Include="PInvoke.User32" Version="0.7.124" />
+		<PackageReference Include="Serilog" Version="3.1.1" />
+		<PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="8.0.0" />
+		<PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+		<PackageReference Include="System.Management" Version="8.0.0" />
+		<PackageReference Include="WinUIEx" Version="2.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\WInUi.Core\URE.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<Page Update="Views\AboutProgramPage.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Update="Views\Controls\WindDirectionControl.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Update="Styles\ValidatingStyles.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Update="Views\Controls\UserConfigControl.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Update="Views\UserSettingsPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Update="Views\HistoryPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Update="Views\Controls\DetectorConfigControl.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Update="Views\EquipmentSettingsPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Update="Views\Controls\MapControl.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+		<Page Update="Views\Controls\DetectorControl.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+
+	<PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+		<HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
+	</PropertyGroup>
+</Project>

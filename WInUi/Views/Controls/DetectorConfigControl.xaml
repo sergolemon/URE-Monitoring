@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="URE.Views.Controls.DetectorConfigControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:URE.Views.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" Margin="0 0 0 0">
+            <SplitButton Height="35" Margin="0 0 15 0">
+                <SplitButton.Content>
+                    <Rectangle Width="14" RadiusX="7" RadiusY="7" Height="14" Fill="{x:Bind ViewModel.HistogramLineColorBrush, Mode=TwoWay}" />
+                </SplitButton.Content>
+                <SplitButton.Flyout>
+                    <Flyout Placement="Bottom">
+                        <ColorPicker Color="{x:Bind ViewModel.HistogramLineColor, Mode=TwoWay}"
+                            ColorSpectrumShape="Ring"
+                            IsMoreButtonVisible="False"
+                            IsColorSliderVisible="False"
+                            IsColorChannelTextInputVisible="False"
+                            IsHexInputVisible="False"
+                            IsAlphaEnabled="False"
+                            IsAlphaSliderVisible="True"
+                            IsAlphaTextInputVisible="True" />
+                    </Flyout>
+                </SplitButton.Flyout>
+            </SplitButton>
+            <TextBox Margin="0 0 15 0" Height="35" x:Uid="DetectorNameBox" Width="150" Text="{x:Bind ViewModel.DetectorName, Mode=TwoWay}"/>
+            <ToggleSwitch IsOn="{x:Bind ViewModel.DetectorEnabled, Mode=TwoWay}"/>
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Command="{x:Bind ViewModel.SelectThisDetectorCommand}" CommandParameter="{x:Bind ViewModel}">
+                <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xe713;"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

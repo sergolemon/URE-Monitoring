@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="URE.Views.Controls.UserConfigControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:URE.Views.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="UserControl_Loaded">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock VerticalAlignment="Center" Width="150" Text="{Binding ShortName, Mode=OneWay}" Margin="0 0 15 0" />
+            <TextBlock VerticalAlignment="Center" Width="100" Text="{Binding CarNumber, Mode=OneWay}" Margin="0 0 15 0" />
+            <ToggleSwitch IsEnabled="False" IsOn="{Binding IsActive, Mode=TwoWay}" OnContent="" OffContent="" />
+            <Button Visibility="{Binding EditBtnVisibility, Mode=OneWay}" Margin="0 0 15 0" Command="{Binding EditCommand}" CommandParameter="{Binding}">
+                <Button.Template>
+                    <ControlTemplate>
+                        <FontIcon Glyph="&#xeb7e;" />
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Visibility="{Binding DeleteBtnVisibility, Mode=OneWay}" Command="{Binding DeleteCommand}" CommandParameter="{Binding}">
+                <Button.Template>
+                    <ControlTemplate>
+                        <FontIcon Glyph="&#xe74d;" />
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
